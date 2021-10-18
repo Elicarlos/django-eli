@@ -181,11 +181,17 @@ EMAIL_HOST_PASSWORD  = 'sua senha'
 
 
 # Criar o .gitignore
+# python manage.py collectstatic
 # ver versão do python que estamos usando e criar um arquivo  chamado runtime.txt na raiz do projeto com a versão do python
 # Depois devemos criar o arquivo Procfile
     # web: gunicorn django2.wsgi --log-file -
 
-# Comando para criar uuma aplicação
+# Comando para criar uma aplicação
 # heroku create django2-eli --buildpack heroku/python
+    # caso ocorra erro na runtime.txt verifique se é suportado
+    # https://devcenter.heroku.com/articles/python-support
 # comando para publicar
 # git push heroku main 
+# Agora devemos criar o banco de dados com
+    # heroku run python manage.py migrate
+     # heroku run python manage.py createsuperuser
