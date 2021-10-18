@@ -54,7 +54,8 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
-    'whitenoise.middleware.WhiteNoiseMiddleware', # adicionado para servir staticos
+    # foi substituido pelo pip install dj_static pip uninstall whitenoise abrir o wsgi.py
+    # 'whitenoise.middleware.WhiteNoiseMiddleware', # adicionado para servir staticos foi substiuido, mas pra mim funcionou
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
