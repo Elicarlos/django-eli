@@ -13,7 +13,7 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 import os
 import dj_database_url
 
-# para usar postgree no Heroku
+# para usar postgree no Heroku, Pega a configuração padrão para Postgree
 DATABASES = {
     'default': dj_database_url.config()
 }
